@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hubungi Saya</title>
+    <!-- Menghubungkan dengan Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- Menghubungkan dengan file CSS eksternal -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="bg-success text-white text-center py-4">
+      <div class="container">
+        <h1>Hubungi Saya</h1>
+      </div>
+    </header>
+
+    <main class="container mt-4">
+      <form
+        action="proses-form.php"
+        method="POST"
+        class="contact-form bg-light p-4 rounded"
+      >
+        <div class="form-group">
+          <label for="nama">Nama:</label><br />
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            class="form-control"
+            required
+          /><br /><br />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            required
+          /><br /><br />
+        </div>
+
+        <div class="form-group">
+          <label for="telepon">No Telepon:</label><br />
+          <input
+            type="tel"
+            id="telepon"
+            name="telepon"
+            class="form-control"
+            required
+          /><br /><br />
+        </div>
+
+        <div class="form-group">
+          <label for="pesan">Pesan:</label><br />
+          <textarea
+            id="pesan"
+            name="pesan"
+            rows="4"
+            class="form-control"
+            required
+          ></textarea
+          ><br /><br />
+        </div>
+
+        <button type="submit" class="btn btn-success">Kirim</button>
+      </form>
+    </main>
+
+    <footer class="bg-success text-white py-3 relative-bottom">
+      <div class="container">
+        <p>&copy; 2024 Ahmad Rizal. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Menghubungkan dengan file JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- Menghubungkan dengan Bootstrap JS dan Popper.js -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-pc7yLoW0Ligv3v1K9FgFpRdG/5FIBpGvS2vBChAc6dE0IjvQB2xu5Z8eyyaZfbK7"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+IrhJszvTMvUEho="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

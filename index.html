@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Informasi Diri</title>
+    <!-- Menghubungkan dengan Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- Menghubungkan dengan file CSS eksternal -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="bg-success text-white text-center py-4">
+      <div class="container">
+        <h1>Informasi Diri</h1>
+      </div>
+    </header>
+
+    <main class="container mt-4">
+      <section>
+        <h2>Data Diri</h2>
+        <div class="personal-info">
+          <p><strong>Nama:</strong> Ahmad Rizal</p>
+          <p><strong>Umur:</strong> 24 tahun</p>
+          <p><strong>Pekerjaan:</strong> Mahasiswa</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="assets/1.jpeg"
+              alt="Foto Saya"
+              class="img-fluid rounded"
+            />
+          </div>
+
+          <div class="col-md-6">
+            <p>
+              Nama saya Ahmad Rizal. Saya seorang mahasiswa di jurusan Aqidah
+              dan Filsafat Islam dengan minat khusus pada pemikiran Seyyed
+              Hossein Nasr dan budaya Sunda Buhun. Saya memiliki semangat yang
+              tinggi dalam mengeksplorasi hubungan antara filsafat Islam dan
+              kearifan lokal. Selain itu, saya juga aktif dalam berbagai
+              kegiatan kampus dan organisasi yang bertujuan untuk mengembangkan
+              pengetahuan dan keterampilan saya di bidang ini. Saya juga
+              tertarik untuk belajar membuat website Saya berkomitmen untuk
+              terus belajar dan berkontribusi dalam memperkaya pemahaman tentang
+              Islam dan budaya lokal.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Konversi Suhu</h2>
+        <div class="form-group">
+          <label for="fahrenheitInput">Masukan Suhu Fahrenheit:</label>
+          <input
+            type="number"
+            id="fahrenheitInput"
+            class="form-control"
+            placeholder="Masukkan suhu dalam Fahrenheit"
+            required
+          />
+        </div>
+        <button id="convertBtn" class="btn btn-primary">
+          Konversi ke Celcius
+        </button>
+        <div id="result" class="mt-3"></div>
+      </section>
+
+      <section>
+        <h2>Hubungi Saya</h2>
+        <p>
+          Silakan hubungi saya melalui formulir di halaman
+          <a href="hubungi.html"> Hubungi Saya</a>.
+        </p>
+      </section>
+
+      <section id="currentDateTime">
+        <h2>Jam saat Ini</h2>
+        <p id="dateTime"></p>
+      </section>
+    </main>
+
+    <footer class="bg-success text-white text-center py-3 relative-bottom">
+      <div class="container">
+        <p>&copy; 2024 Ahmad Rizal. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Menghubungkan dengan file JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Menghubungkan dengan Bootstrap JS dan Popper.js -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-pc7yLoW0Ligv3v1K9FgFpRdG/5FIBpGvS2vBChAc6dE0IjvQB2xu5Z8eyyaZfbK7"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+IrhJszvTMvUEho="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
